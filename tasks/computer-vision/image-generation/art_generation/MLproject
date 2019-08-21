@@ -1,0 +1,17 @@
+name: art_generation
+
+conda_env: conda.yaml
+
+entry_points:
+
+  main:
+    parameters:
+      alpha: {type: float, default: 10}
+      beta: {type: float, default: 40}
+      content_image: {type: string, default: 'images/test.jpg'}
+      style_image: {type: string, default: 'images/style.jpg'}
+      content_layer: {type: string, default: '-NA'}
+      style_lname: {type: string, default: '-NA'}
+      style_lcoff: {type: string, default: '-NA'}
+      iterations : {type: int, default: 1000}
+    command: "python art_generation.py {alpha} {beta} {content_image} {style_image} {content_layer} {style_lname} {style_lcoff} {iterations}"
