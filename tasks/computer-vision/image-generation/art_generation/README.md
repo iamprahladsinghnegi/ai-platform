@@ -33,6 +33,7 @@ list:
 - scipy==1.1.0
 - matplotlib>=3.1.1
 - pillow>=6.1.0
+- numpy>=1.16.4
 
 
 ## Run the code
