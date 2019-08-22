@@ -18,7 +18,7 @@ where,<br> **α** = weight of the content image <br>
 ### Data Files
 
 * Download [ Pre-trained VGG model ] (http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat) Put it in the 
-tasks/computer-vision/image-generation/art_generation/model/ directory of this repository. 
+tasks/computer-vision/style-transfer/model/ directory of this repository. 
 - This model contains ['input', 'conv1_1', 'conv1_2', 'avgpool1', 'conv2_1', 'conv2_2', 'avgpool2', 'conv3_1', 'conv3_2', 'conv3_3', 'conv3_4', 'avgpool3', 'conv4_1', 'conv4_2', 'conv4_3', 'conv4_4', 'avgpool4', 'conv5_1', 'conv5_2', 'conv5_3', 'conv5_4', 'avgpool5'] layers.
 
 
@@ -38,8 +38,8 @@ list:
 
 ## Run the code
 
-- Navigate to tasks/computer-vision/image-generation/art_generation/ directory within the repository.
-- Place the images in tasks/computer-vision/image-generation/art_generation/images/ directory then issue any of the following commands:
+- Navigate to tasks/computer-vision/style-transfer/ directory within the repository.
+- Place the images in tasks/computer-vision/style-transfer/images/ directory then issue any of the following commands:
 
 ```bash
 python art_generation.py {alpha} {beta} {content_image} {style_image} {content_layer} {style_lname} {style_lcoff} {iterations}
